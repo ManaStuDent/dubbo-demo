@@ -1,7 +1,7 @@
-package com.inshare.dubbo.provider.handler;
+package com.inshare.dubbo.provider.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.inshare.dubbo.common.TestApi;
+import com.inshare.dubbo.common.ApiService;
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,9 +9,9 @@ import org.springframework.stereotype.Component;
  *
  * @Component 指定这是一个 spring bean
  */
-@Service(interfaceClass = TestApi.class)
+@Service(interfaceClass = ApiService.class, timeout = 5000)
 @Component
-public class TestApiImpl implements TestApi {
+public class ApiServiceImpl implements ApiService {
 
     @Override
     public String show(long id) {

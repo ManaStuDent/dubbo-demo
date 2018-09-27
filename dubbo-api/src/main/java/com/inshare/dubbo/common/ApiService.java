@@ -1,6 +1,6 @@
 package com.inshare.dubbo.common;
 
-public interface TestApi {
+public interface ApiService {
 
     String show(long id);
 }
