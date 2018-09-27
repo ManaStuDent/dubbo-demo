@@ -4,6 +4,11 @@ import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * 消费者启动类
+ *
+ * @author Chengloong
+ */
 @SpringBootApplication
 @EnableDubboConfiguration
 public class DubboConsumerApplication {

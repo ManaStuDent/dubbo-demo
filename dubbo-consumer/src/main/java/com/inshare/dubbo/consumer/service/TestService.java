@@ -1,9 +1,14 @@
 package com.inshare.dubbo.consumer.service;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.inshare.dubbo.common.ApiService;
+import com.inshare.dubbo.common.service.ApiService;
 import org.springframework.stereotype.Service;
 
+/**
+ * 消费者 Service
+ *
+ * @author Chengloong
+ */
 @Service
 public class TestService {
 
