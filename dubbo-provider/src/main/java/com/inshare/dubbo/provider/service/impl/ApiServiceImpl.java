@@ -17,6 +17,7 @@ public class ApiServiceImpl implements ApiService {
 
     @Override
     public String show(long id) {
+        System.out.println("provider show 被调用");
         return String.format("TestHandler service %d", id);
     }
 }
