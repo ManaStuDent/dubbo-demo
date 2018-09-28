@@ -24,6 +24,10 @@ public class TestService {
     @Reference(cache = "lru")
     private ApiService apiService;
 
+//    重点 10 如果使用 xml 的方式配置 dubbo 这就只需要注入就可以了
+//    @Autowired
+//    private ApiService apiService;
+
     public String show(long id) {
     	// 重点 8 隐式传参
 	    // 后面的远程调用都会隐式将这些参数发送到服务器端，类似cookie，用于框架集成，不建议常规业务使用

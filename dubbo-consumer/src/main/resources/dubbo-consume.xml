@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 重点 10 springboot 使用 xml 配置文件配置 dubbo -->
+    <!-- 必须在配置文件中重新配置 application 等参数，好像不和 properties 共用 -->
+
+    <!--<dubbo:application name="dubbo-consumer" />-->
+    <!--<dubbo:registry address="zookeeper://localhost:2181" />-->
+    <!--<dubbo:protocol name="dubbo" port="20889" />-->
+
+    <!--<dubbo:reference id="apiService" interface="com.inshare.dubbo.common.service.ApiService" />-->
+
+
+</beans>
+
