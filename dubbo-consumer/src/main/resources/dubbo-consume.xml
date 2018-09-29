@@ -13,6 +13,7 @@
     <!--<dubbo:registry address="zookeeper://localhost:2181" />-->
     <!--<dubbo:protocol name="dubbo" port="20889" />-->
 
+    <!--接口位置-->
     <!--<dubbo:reference id="apiService" interface="com.inshare.dubbo.common.service.ApiService" />-->
 
 

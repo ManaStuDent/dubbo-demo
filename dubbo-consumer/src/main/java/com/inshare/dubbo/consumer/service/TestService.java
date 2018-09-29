@@ -3,6 +3,7 @@ package com.inshare.dubbo.consumer.service;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.rpc.RpcContext;
 import com.inshare.dubbo.common.service.ApiService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
