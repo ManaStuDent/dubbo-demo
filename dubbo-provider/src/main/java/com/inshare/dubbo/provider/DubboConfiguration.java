@@ -8,12 +8,13 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * 重点 11 使用 java config 的方式配置 dubbo
- *
  * @Configuration 文件必须和 springboot 启动 application.java 在一个目录下
+ *
  * @author Chengloong
  */
 @Configuration
 public class DubboConfiguration {
+
     @Bean
     public ApplicationConfig applicationConfig() {
         ApplicationConfig applicationConfig = new ApplicationConfig();
@@ -29,7 +30,7 @@ public class DubboConfiguration {
     }
 
     @Bean
-    public ProtocolConfig protocolConfig(){
+    public ProtocolConfig protocolConfig() {
         ProtocolConfig protocolConfig = new ProtocolConfig();
         protocolConfig.setPort(20880);
         protocolConfig.setName("dubbo");

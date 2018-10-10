@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 重点 11 使用 java config 的方式配置 dubbo
  * 在使用 java config 的方式配置时 不能使用 EnableDubboConfiguration 注解
  * 使用 DubboComponentScan 指定 serverImpl 包路对 @Service 进行扫描
+ *
  * @author Chengloong
  */
 @SpringBootApplication
