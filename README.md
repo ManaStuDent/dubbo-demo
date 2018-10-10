@@ -334,3 +334,38 @@ import org.springframework.context.annotation.ImportResource;
 ```
 
 这样就可以既使用注解又可以当注解不能满足业务需求的时候使用 xml 进行详细的配置。
+
+## 重点 11 使用 java config 的方式配置 dubbo
+
+dubbo 可以是用 java config 的形式进行配置，首先新建 DubboConfiguration.java
+这里要注意，Spring 的配置文件使用 @Configuration 注解，并且要和 Springboot application 启动类在同一个目录下
+并且需要将 @EnableDubboConfiguration 去除，转而使用 @DubboComponentScan 进行包扫描
+
+```Java
+@Configuration
+public class DubboConfiguration {
+    @Bean
+    public ApplicationConfig applicationConfig() {
+        ApplicationConfig applicationConfig = new ApplicationConfig();
+        applicationConfig.setName("dubbo-provider");
+        return applicationConfig;
+    }
+
+    @Bean
+    public RegistryConfig registryConfig() {
+        RegistryConfig registryConfig = new RegistryConfig();
+        registryConfig.setAddress("zookeeper://localhost:2181");
+        return registryConfig;
+    }
+
+    @Bean
+    public ProtocolConfig protocolConfig(){
+        ProtocolConfig protocolConfig = new ProtocolConfig();
+        protocolConfig.setPort(20880);
+        protocolConfig.setName("dubbo");
+        return protocolConfig;
+    }
+}
+```
+
+使用 java config 配置后就不需要使用 properties 指定端口什么的了。
