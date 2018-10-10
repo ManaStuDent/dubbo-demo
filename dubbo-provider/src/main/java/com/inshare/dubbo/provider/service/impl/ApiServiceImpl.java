@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * @Component 指定这是一个 spring bean
  * @author Chengloong
  */
-@Service(interfaceClass = ApiService.class, timeout = 5000)
+@Service(interfaceClass = ApiService.class, timeout = 5000, owner = "Chengloong")
 @Component
 public class ApiServiceImpl implements ApiService {
 

@@ -19,6 +19,8 @@ public class DubboConfiguration {
     public ApplicationConfig applicationConfig() {
         ApplicationConfig applicationConfig = new ApplicationConfig();
         applicationConfig.setName("dubbo-provider");
+        applicationConfig.setOrganization("co2fe");
+        applicationConfig.setOwner("Chengloong");
         return applicationConfig;
     }
 
